@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41.558" height="46.175" viewBox="0 0 41.558 46.175">
+  <defs>
+    <clipPath id="clip-scheduler">
+      <rect width="41.558" height="46.175"/>
+    </clipPath>
+  </defs>
+  <g id="scheduler" clip-path="url(#clip-scheduler)">
+    <path id="ic_insert_invitation_24px" d="M35.323,26.4H23.779V37.94H35.323ZM33.014,1V5.618H14.544V1H9.926V5.618H7.618a4.6,4.6,0,0,0-4.594,4.618L3,42.558a4.616,4.616,0,0,0,4.618,4.618H39.94a4.631,4.631,0,0,0,4.618-4.618V10.235A4.631,4.631,0,0,0,39.94,5.618H37.631V1ZM39.94,42.558H7.618v-25.4H39.94Z" transform="translate(-3 -1)" fill="#277fbb"/>
+  </g>
+</svg>
