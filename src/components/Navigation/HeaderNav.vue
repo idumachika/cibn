@@ -32,9 +32,12 @@
                 <a class="dropdown-item" href="#">
                   <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
                 <div class="dropdown-divider"></div>
-                <a class="drop
-                down-item" href="#">
-                  <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
+                <router-link :to={name:login} v-if="isAuth">
+                  <a class="drop down-item" @click="logout()">
+                    <i class="mdi mdi-logout mr-2 text-primary"></i> Signout 
+                  </a>
+                </router-link>
+
               </div>
             </li>
            
@@ -141,8 +144,19 @@
 
     export default {
         name: "HeaderNav",
+        data() {
+          return {
+              loading: false,
+              notifications: [],
+              isAuth: false,
+          }
+        },
         computed: {
             ...mapGetters({user: "GET_USER"})
+        },
+        async created() {
+            this.isAuth = this.$store.getters.IS_AUTHENTICATED;
+      
         },
         methods: {
             open () {
@@ -156,7 +170,12 @@
             },
             openCanvas () {
                 $('.sidebar-offcanvas').toggleClass('active')
-            }
+            },
+            async logout() {
+                this.$store.dispatch("UNSET_USER");
+                this.isAuth = this.$store.getters.IS_AUTHENTICATED;
+                 this.$router.push('/login')
+            },
         }
     }
 </script>

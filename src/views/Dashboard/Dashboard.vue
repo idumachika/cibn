@@ -39,7 +39,7 @@
                             <div class="card-body">
                                 <img src="../../assets/images/circle.svg" class="card-img-absolute"
                                      alt="circle-image"/>
-                                <h4 class="font-weight-normal mb-3">Active Mentor
+                                <h4 class="font-weight-normal mb-3">Available Mentor
                                     <i class="mdi mdi-account-multiple mdi-24px float-right"></i>
                                 </h4>
                                 <h2 class="mb-5">0</h2>

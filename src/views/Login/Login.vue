@@ -169,4 +169,13 @@ label{
   text-decoration: underline;
   color:whitesmoke !important
 }
+.navbar-brand{
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 16rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
 </style>

@@ -2,8 +2,8 @@
   <div>
     
    <mdb-navbar dark position='top' expand='medium' class="navbar"> 
-       <mdb-navbar-brand waves >
-           <img src="../assets/images/logos.png" alt="">
+       <mdb-navbar-brand>
+           <img src="../assets/images/logo.png" alt="">
        </mdb-navbar-brand>
     <mdb-navbar-toggler>
             <mdb-navbar-nav right class="mr-5" style="">
@@ -110,15 +110,16 @@ input:focus,.textarea:focus, select:focus {
      box-shadow: 0 0 5px rgb(75, 148, 8, 1);
      outline: 0 none;
  }
-
- .signup:hover, .signin:hover {
+.signup:hover, .signin:hover {
     border:2px solid white;
     border-radius:5px;
- }
+}
 
- .cancel:hover, .continue:hover {
+.cancel:hover, .continue:hover {
     background: #bbb !important; 
- }
+}
+
+
 
 
 </style>
